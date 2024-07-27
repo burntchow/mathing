@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="home-page">
+        <h1>Math Practice</h1>
+        <button onclick="startGame('add')">Addition</button>
+        <button onclick="startGame('subtract')">Subtraction</button>
+        <button onclick="startGame('multiply')">Multiplication</button>
+        <button onclick="startGame('divide')">Division</button>
+    </div>
+
+    <div id="game-page" style="display:none;">
+        <h1 id="operation-title"></h1>
+        <div id="problem"></div>
+        <input type="text" id="answer" readonly>
+        <div id="number-pad">
+            <button onclick="enterNumber(1)">1</button>
+            <button onclick="enterNumber(2)">2</button>
+            <button onclick="enterNumber(3)">3</button>
+            <button onclick="enterNumber(4)">4</button>
+            <button onclick="enterNumber(5)">5</button>
+            <button onclick="enterNumber(6)">6</button>
+            <button onclick="enterNumber(7)">7</button>
+            <button onclick="enterNumber(8)">8</button>
+            <button onclick="enterNumber(9)">9</button>
+            <button onclick="enterNumber(0)">0</button>
+            <button onclick="clearAnswer()">C</button>
+            <button onclick="submitAnswer()">Submit</button>
+        </div>
+        <div id="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
