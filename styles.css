@@ -66,9 +66,13 @@ button {
     top: 10px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+     
+}
+
+#operation-title {
+    margin-left: 10px;
+    font-size: 24px;
 }
 
 #timer {

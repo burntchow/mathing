@@ -38,6 +38,10 @@ function generateProblem() {
     let num1 = Math.floor(Math.random() * 99) + 1;
     let num2 = Math.floor(Math.random() * 99) + 1;
 
+    if (num1 < num2) {
+        [num1, num2] = [num2, num1]; // Swap to make sure num1 is always larger or equal to num2
+    }
+
     switch (currentOperation) {
         case 'add':
             currentProblem = {num1, num2, answer: num1 + num2};
