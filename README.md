@@ -13,4 +13,4 @@ When I was but a small bean my arithmetic skills needed some sharpening. Back th
 Users can select what operation they want and they have 2 minutes to solve as many questions as they can - quite simple.
 
 ## How to Use the Project
-I'll leave a link here for you to go to:
+I'll leave a link here for you to go to: https://burntchow.github.io/mathing/ 
