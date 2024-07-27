@@ -15,9 +15,22 @@ function startGame(operation) {
 }
 
 function startTimer() {
-    setTimeout(endGame, 120000); // 2 minutes
+    updateTimerDisplay();
+    timer = setInterval(function() {
+        timeRemaining--;
+        updateTimerDisplay();
+        if (timeRemaining <= 0) {
+            clearInterval(timer);
+            endGame();
+        }
+    }, 1000);
 }
 
+function updateTimerDisplay() {
+    let minutes = Math.floor(timeRemaining / 60);
+    let seconds = timeRemaining % 60;
+    document.getElementById('timer').innerText = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
 function generateProblem() {
     let num1 = Math.floor(Math.random() * 99) + 1;
     let num2 = Math.floor(Math.random() * 99) + 1;
