@@ -4,6 +4,7 @@ let attempts = 0;
 let correctAnswers = 0;
 let totalAttempts = 0;
 let timer;
+let timeRemaining = 120; // 2 minutes 
 
 function startGame(operation) {
     currentOperation = operation;
@@ -31,7 +32,9 @@ function updateTimerDisplay() {
     let seconds = timeRemaining % 60;
     document.getElementById('timer').innerText = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 }
-function generateProblem() {
+
+
+function generateProblem() { 
     let num1 = Math.floor(Math.random() * 99) + 1;
     let num2 = Math.floor(Math.random() * 99) + 1;
 

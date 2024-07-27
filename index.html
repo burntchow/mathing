@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Practice</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./Umber-Icon.png">
 </head>
 <body>
     <div id="home-page">
@@ -16,23 +17,38 @@
     </div>
 
     <div id="game-page" style="display:none;">
-        <div id="timer">02:00</div>
-        <h1 id="operation-title"></h1>
-        <div id="problem"></div>
+        <div id="header">
+            <div id="timer">02:00</div>
+            <h1 id="operation-title"></h1>
+        </div>
+
+
+         <div id="problem-container"> 
+            <div id="problem"></div>
+        </div>
+
         <input type="text" id="answer" readonly>
         <div id="number-pad">
-            <button onclick="enterNumber(1)">1</button>
-            <button onclick="enterNumber(2)">2</button>
-            <button onclick="enterNumber(3)">3</button>
-            <button onclick="enterNumber(4)">4</button>
-            <button onclick="enterNumber(5)">5</button>
-            <button onclick="enterNumber(6)">6</button>
-            <button onclick="enterNumber(7)">7</button>
-            <button onclick="enterNumber(8)">8</button>
-            <button onclick="enterNumber(9)">9</button>
-            <button onclick="enterNumber(0)">0</button>
-            <button onclick="clearAnswer()">C</button>
-            <button onclick="submitAnswer()">Submit</button>
+            <div class="number-row">
+                <button onclick="enterNumber(7)">7</button>
+                <button onclick="enterNumber(8)">8</button>
+                <button onclick="enterNumber(9)">9</button>
+            </div>
+            <div class="number-row">
+                <button onclick="enterNumber(4)">4</button>
+                <button onclick="enterNumber(5)">5</button>
+                <button onclick="enterNumber(6)">6</button>
+            </div>
+            <div class="number-row">
+                <button onclick="enterNumber(1)">1</button>
+                <button onclick="enterNumber(2)">2</button>
+                <button onclick="enterNumber(3)">3</button>
+            </div>
+            <div class="number-row">
+                <button onclick="enterNumber(0)">0</button>
+                <button onclick="clearAnswer()">C</button>
+                <button onclick="submitAnswer()">↵</button>
+            </div>
         </div>
         <div id="feedback"></div>
     </div>
