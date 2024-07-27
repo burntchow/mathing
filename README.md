@@ -14,3 +14,5 @@ Users can select what operation they want and they have 2 minutes to solve as ma
 
 ## How to Use the Project
 I'll leave a link here for you to go to: https://burntchow.github.io/mathing/ 
+
+* There are some things I need to fix still 😅 so ignore the substraction and division options OK 👀
